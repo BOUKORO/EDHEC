@@ -1,0 +1,16 @@
+.logo {
+    height: 114px !important;
+}
+
+.back{
+    background-image: url("/img/pexels-kindel-media-7578975.jpg");
+    height: 400px;
+    background-size: cover;  
+}
+
+.bg{
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+
+}
