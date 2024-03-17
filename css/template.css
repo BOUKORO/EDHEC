@@ -4,13 +4,59 @@
 
 .back{
     background-image: url("/img/pexels-kindel-media-7578975.jpg");
-    height: 400px;
-    background-size: cover;  
+    height: 500px; 
 }
 
 .bg{
     height: 500px;
-    background-color: rgb(0, 0, 0);
+    background-color: black ;
     opacity: 0.5;
+    z-index: 1;
 
+}
+.box{
+    height: 300px;
+    width: 700px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: 100px;
+    z-index: 2;
+    color: #fff;    
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-radius: 30px !important;
+}
+
+@media screen and (max-width :480px) {
+
+    .box{
+        padding: 10px;
+        height: 300px;
+        width: 400px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        margin-top: 100px;
+        z-index: 2;
+        color: #fff;    
+    }
 }
