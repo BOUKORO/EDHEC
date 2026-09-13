@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: edhec
-          image: nginx:alpine
+          image: abouko1/edhec:1.0
           ports:
             - containerPort: 80
