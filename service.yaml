@@ -1,1 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: edhec
+spec:
+  type: NodePort
 
+  selector:
+    app: edhec
+
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 31306
