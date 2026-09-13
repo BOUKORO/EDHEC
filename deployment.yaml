@@ -1,1 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edhec
+  labels:
+    app: edhec
+spec:
+  replicas: 2
 
+  selector:
+    matchLabels:
+      app: edhec
+
+  template:
+    metadata:
+      labels:
+        app: edhec
+
+    spec:
+      containers:
+        - name: edhec
+          image: nginx:alpine
+          ports:
+            - containerPort: 80
